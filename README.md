@@ -8,7 +8,7 @@ Log tập trung rất có lợi cho việc khai thác các thông tin về máy 
 
 Tóm gọn lại như sau:
 
-<img src"http://i.imgur.com/JK4nAV2.jpg">
+<img src="http://i.imgur.com/MZV5K5e.png">
 
 - Logstash xử lý các log đến
 - Elasticsearch lưu trữ tất cả các log
@@ -231,3 +231,11 @@ Ví dụ với mô hình của mình
 - Khởi động lại rsyslog
 
 `sudo service rsyslog restart`
+
+## Truy cập vào địa chỉ  http://IP_ELK_SERVER/kinana
+
+------
+
+Tham khảo
+
+- https://www.digitalocean.com/community/tutorials/how-to-use-logstash-and-kibana-to-centralize-and-visualize-logs-on-ubuntu-14-04
