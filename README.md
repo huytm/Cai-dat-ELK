@@ -6,7 +6,9 @@ Bài viết này sử dụng ***logstash 1.4.2*** và ***kibana3***. Logstash l�
 
 Log tập trung rất có lợi cho việc khai thác các thông tin về máy chủ hoặc ứng dụng của bạn. như đã nói ở trên, logstash là công cụ để thu thập log. Có nhiều cách để chuyển tiếp log từ phía client lên ELK server tuy nhiên trong bài viết này mình giới hạn sử dụng ***rsyslog*** thuần túy.
 
-Tóm gọn lại như sau
+Tóm gọn lại như sau:
+
+<img src"http://i.imgur.com/JK4nAV2.jpg">
 
 - Logstash xử lý các log đến
 - Elasticsearch lưu trữ tất cả các log
