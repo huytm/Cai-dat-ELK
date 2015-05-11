@@ -55,7 +55,7 @@ echo debconf shared/accepted-oracle-license-v1-1 seen true | sudo debconf-set-se
 
 <img src="http://i.imgur.com/G1BgwkV.png">
 
-#####2. Cài đặt Elasticsearch
+#####3. Cài đặt Elasticsearch
 **Note**: Logstash 1.4.2 yêu cầu sử dụng Elasticsearch 1.1.1
 
 Để cài đặt Elasticsearch 1.1.1 ta thực hiện các bước sau
@@ -88,7 +88,7 @@ echo debconf shared/accepted-oracle-license-v1-1 seen true | sudo debconf-set-se
 `sudo update-rc.d elasticsearch defaults 95 10`
 
 ----------
-#####2. Cài đặt Kibana
+#####4. Cài đặt Kibana
 **Note**: Logstash 1.4.2 khuyến cáo sử dụng kibana 3.0.1
 
 - Cài đặt các gói cần thiêt
@@ -154,7 +154,7 @@ service apache2 restart
 ```
 
 
-#####2. Cài đặt Logstash
+#####5. Cài đặt Logstash
 
 - Tạo file logstash source list:
 
@@ -208,7 +208,7 @@ Như đã nói ở các bài viêt trước, logstash xử lý log như sau: **i
 
 ở đây mình dùng input là syslog gửi qua tcp và udp sau đó putput vào elasticsearch để tiện cho việc lưu trữ và sử dụng sau này
 
--Khởi động lại logstash
+- Khởi động lại logstash
 
 `service logstash restart`
 
