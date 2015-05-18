@@ -13,7 +13,7 @@ Tóm gọn lại như sau:
 - Logstash xử lý các log đến
 - Elasticsearch lưu trữ tất cả các log
 - Kibana Web interface để tìm kiếm và hiển thị log
-- Logstash forwarder: Cài đặt phía client và sẽ gửi log đến logstash
+- Rsyslog : Cài đặt phía client và sẽ gửi log đến logstash
 
 Ba thành phần đầu tiên sẽ cài đặt trên 1 server, gọi là ELK server, Tại phía client sẽ sử dụng rsyslog để đẩy log đến server
 
@@ -83,6 +83,7 @@ echo debconf shared/accepted-oracle-license-v1-1 seen true | sudo debconf-set-se
 `sudo vi /etc/elasticsearch/elasticsearch.yml`
 
 - Khởi động elasticsearch
+
 `sudo service elasticsearch restart`
 
 - Để Elasticsearch khởi động cùng với server sử dụng lệnh sau
